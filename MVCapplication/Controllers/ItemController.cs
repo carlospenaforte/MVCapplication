@@ -1,12 +1,14 @@
-﻿    using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using MVCapplication.Models;
 
 namespace MVCapplication.Controllers
 {
     public class ItemController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Overview()
         {
-            return View();
+            var item = new Item() { Name = "keyboard" };
+            return View(item);
         }
     }
 }
