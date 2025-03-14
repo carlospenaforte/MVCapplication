@@ -3,7 +3,7 @@ using MVCapplication.Models;
 
 namespace MVCapplication.Controllers
 {
-    public class ItemController : Controller
+    public class ItemsController : Controller
     {
         public IActionResult Overview()
         {
