@@ -1,4 +1,14 @@
 ﻿@model MVCapplication.Models.Item
 @{
+	var isLoggedIn = true;
 }
 <p>This is the name of the item @Model.Name</p>
+
+@if (isLoggedIn)
+{
+	<p>Welcome Back!!</p>
+}
+else
+{
+	<p>Please log in.</p>
+}
