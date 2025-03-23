@@ -10,10 +10,10 @@ namespace MVCapplication.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Item>().HasData(
-                new Item { Id=4, Name="microphone", Price=40, SerialNumberId=10 }
+                new Item { Id = 20, Name = "microphone", Price = 40, SerialNumberId = 11 }
                 );
             modelBuilder.Entity<SerialNumber>().HasData(
-                new SerialNumber { Id = 10, Name = "MIC150", ItemId=4 }
+                new SerialNumber { Id = 11, Name = "MIC150", ItemId = 20 }
                 );
 
             base.OnModelCreating(modelBuilder);
